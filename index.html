@@ -4,19 +4,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prozpr UI Mockups</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif&display=swap">
   <style>
-    body { background: #fff; color: #000; font-family: sans-serif; padding: 16px; }
-    a.button { display: inline-block; padding: 8px 16px; border: 1px solid #000; color: #000; text-decoration: none; }
+    /* Prozpr "Ink & Sunbeam": near-black + gold on warm cream */
+    :root {
+      --cream: #F7F3EC;
+      --card: #FFFFFF;
+      --ink: #111113;
+      --muted: #8A8275;
+      --border: #E8E2D2;
+      --gold: #E0B84A;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 32px 16px; background: var(--cream); color: var(--ink); font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+    main { max-width: 640px; margin: 0 auto; }
+    .label { font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+    h1 { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.1; margin: 8px 0; }
+    p { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .card h2 { font-size: 16px; font-weight: 600; margin: 0; }
+    .card h2::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 999px; background: var(--gold); margin-right: 8px; vertical-align: middle; }
+    a.button { background: var(--ink); color: var(--cream); text-decoration: none; font-size: 15px; font-weight: 600; padding: 10px 18px; border-radius: 12px; white-space: nowrap; }
+    a.button:hover { opacity: 0.9; }
   </style>
 </head>
 <body>
-  <h1>Prozpr UI Mockups</h1>
-  <p>Internal testing. Open each option and share feedback.</p>
+  <main>
+    <div class="label">Internal testing</div>
+    <h1>Prozpr UI Mockups</h1>
+    <p>Open each option and share feedback.</p>
 
-  <h2>Option 1</h2>
-  <p><a class="button" href="Prozpr_Option1.html">View Option 1</a></p>
+    <div class="card">
+      <h2>Option 1</h2>
+      <a class="button" href="Prozpr_Option1.html">View Option 1</a>
+    </div>
 
-  <h2>Option 2</h2>
-  <p><a class="button" href="Prozpr_Option2.html">View Option 2</a></p>
+    <div class="card">
+      <h2>Option 2</h2>
+      <a class="button" href="Prozpr_Option2.html">View Option 2</a>
+    </div>
+  </main>
 </body>
 </html>
